@@ -1,0 +1,141 @@
+/* GLOBAL */
+body {
+  font-family: "Cairo", sans-serif;
+  background: #ffffff;
+  color: #1e293b;
+  line-height: 1.6;
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+h1,h2,h3,h4,h5 { font-weight: 700; }
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #1e3a8a;
+}
+
+/* NAVBAR */
+.navbar { padding: 15px 0; }
+.navbar-brand { color: #1e3a8a !important; }
+.nav-link { color: #1e293b !important; }
+
+/* HERO */
+#home {
+  background: linear-gradient(135deg, #e0f2fe, #ffffff);
+  padding: 120px 0;
+}
+#home h1 span { color: #3b82f6; }
+.btn-primary {
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  border: none;
+  font-weight: 600;
+  transition: transform .2s ease;
+  font-size: 17px;
+}
+.btn-primary:hover { transform: scale(1.05); }
+
+/* ABOUT */
+.about-card {
+  background: linear-gradient(135deg,#eff6ff,#dbeafe);
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(59,130,246,0.15);
+  color: #1e293b;
+}
+
+/* SKILLS */
+.skill-card {
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+  border-radius: 14px;
+  background: #dbeafe;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skill-card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(59,130,246,0.15); }
+.skill-card i { color: #3b82f6; }
+
+/* EDUCATION */
+.education-card {
+  background: linear-gradient(135deg,#eff6ff,#dbeafe);
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(59,130,246,0.15);
+}
+
+#education .card1 {
+  width: 500px;       
+  border-radius: 12px;
+  overflow: hidden;   
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  margin: 0 auto;    
+}
+
+#education .card1 img {
+  width: 100%;        
+  height: 200px;     
+  object-fit: cover; 
+}
+
+
+
+/* SERVICES */
+.service-card {
+  background: linear-gradient(135deg,#eff6ff,#dbeafe);
+  border-radius:16px;
+  color:#1e293b;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height:280px;
+}
+.service-card:hover { transform: translateY(-5px); box-shadow: 0 12px 28px rgba(59,130,246,0.15); }
+.service-card i { color: #3b82f6; }
+
+
+/* Projects */
+#projects .project-card {
+  background: linear-gradient(135deg, #ffffff, #e0f2fe);
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projects .project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+}
+
+#projects .project-card img {
+  width: 100%;       /* تملى عرض الكارت بالكامل */
+  height: 200px;     /* طول ثابت لكل الصور */
+  object-fit: cover; /* يحافظ على تناسب الصورة */
+}
+/* CONTACT */
+.contact-card {
+  background: linear-gradient(135deg,#eff6ff,#dbeafe);
+  border-radius:14px;
+  padding:20px;
+}
+.contact-card a { color:#3b82f6; text-decoration:none; }
+.contact-card a:hover { text-decoration:underline; }
+
+/* FOOTER */
+footer {
+  background:#f1f5f9;
+  padding:20px 0;
+  font-size:14px;
+  color:#1e293b;
+  text-align:center;
+}
