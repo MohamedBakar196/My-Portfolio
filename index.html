@@ -8,9 +8,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Animation Libraries -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./img/me.png">
+    <link rel="apple-touch-icon" href="./img/me.png">
 </head>
 
 <body>
+
+
+    <!-- Theme toggle removed per request: light mode only -->
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
@@ -37,15 +49,15 @@
   <div class="container hero-grid">
     
     <!-- الدائرة مع الصورة -->
-    <div class="hero-circle">
-      <img src="./img/IMG_2131.JPG" alt="Profile Picture">
+    <div class="hero-circle" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+      <img src="./img/IMG_2131.JPG" alt="Profile Picture" loading="lazy">
     </div>
     
     <!-- النص -->
-    <div class="hero-text">
+    <div class="hero-text" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
       <h1>Hello, I'm <span>Mohamed Bakar</span></h1>
       <p class="lead">Front-End Developer & IT Student</p>
-      <a href="#projects" class="btn btn-primary btn-lg mt-3">View My Work</a>
+      <a href="#projects" class="btn btn-primary btn-lg mt-3" data-bs-toggle="tooltip" data-bs-placement="top" title="See my projects">View My Work</a>
     </div>
 
   </div>
@@ -54,17 +66,17 @@
 
 
     <!-- ABOUT -->
-    <section id="about" class="d-flex align-items-center">
+    <section id="about" class="d-flex align-items-center" style="content-visibility:auto; contain-intrinsic-size: 1000px 800px;">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="800">About Me</h2>
             <div class="row align-items-center g-5">
-                <div class="col-lg-5 text-center">
-                    <img src="./img/frontend.jpg" class="img-fluid rounded shadow" alt="About Image">
+                <div class="col-lg-5 text-center" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
+                    <img src="./img/frontend.jpg" class="img-fluid rounded shadow" alt="About Image" loading="lazy">
                 </div>
-                <div class="col-lg-7">
+                <div class="col-lg-7" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
                     <div class="card p-4 mb-4 about-card">
-                        <p>Hello, I’m Mohamed, an IT student at Sinai University. I have a solid background in Front-End
-                            Development, with experience in HTML, CSS, and JavaScript. I’m passionate about creating
+                        <p>Hello, I'm Mohamed, an IT student at Sinai University. I have a solid background in Front-End
+                            Development, with experience in HTML, CSS, and JavaScript. I'm passionate about creating
                             clean, responsive, and user-friendly websites.</p>
                     </div>
                     <div class="card p-4 about-card">
@@ -82,61 +94,61 @@
     </section>
 
     <!-- SKILLS -->
-    <section id="skills" class="d-flex align-items-center">
+    <section id="skills" class="d-flex align-items-center" style="content-visibility:auto; contain-intrinsic-size: 1000px 800px;">
         <div class="container">
-            <h2 class="section-title">Skills</h2>
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="800">Skills</h2>
             <div class="row g-4 text-center">
 
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
                     <div class="card p-4 skill-card text-center">
                         <i class="fab fa-html5 fa-2x mb-2 text-primary"></i>
                         <h5>HTML</h5>
                     </div>
                 </div>
 
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
                     <div class="card p-4 skill-card text-center">
                         <i class="fab fa-css3-alt fa-2x mb-2 text-primary"></i>
                         <h5>CSS</h5>
                     </div>
                 </div>
 
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
                     <div class="card p-4 skill-card text-center">
                         <i class="fab fa-js-square fa-2x mb-2 text-primary"></i>
                         <h5>JavaScript</h5>
                     </div>
                 </div>
 
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="400">
                     <div class="card p-4 skill-card text-center">
                         <i class="fab fa-bootstrap fa-2x mb-2 text-primary"></i>
                         <h5>Bootstrap</h5>
                     </div>
                 </div>
 
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="500">
                     <div class="card p-4 skill-card text-center">
                         <i class="fab fa-git-alt fa-2x mb-2 text-primary"></i>
                         <h5>Git/GitHub</h5>
                     </div>
                 </div>
 
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="600">
                     <div class="card p-4 skill-card text-center">
                         <i class="fas fa-lightbulb fa-2x mb-2 text-primary"></i>
                         <h5>Creative Thinking</h5>
                     </div>
                 </div>
 
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="700">
                     <div class="card p-4 skill-card text-center">
                         <i class="fas fa-heart fa-2x mb-2 text-primary"></i>
                         <h5>Passionate</h5>
                     </div>
                 </div>
 
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="800">
                     <div class="card p-4 skill-card text-center">
                         <i class="fas fa-users fa-2x mb-2 text-primary"></i>
                         <h5>Teamwork</h5>
@@ -149,11 +161,11 @@
 
 
     <!-- EDUCATION -->
-    <section id="education" class="d-flex align-items-center">
+    <section id="education" class="d-flex align-items-center" style="content-visibility:auto; contain-intrinsic-size: 1000px 800px;">
         <div class="container">
-            <h2 class="section-title">Education</h2>
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="800">Education</h2>
             <div class="row g-4 align-items-center">
-                <div class="col-lg-7">
+                <div class="col-lg-7" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
                     <div class="card p-4 mb-4 education-card">
                         <h5><i class="fas fa-graduation-cap me-2"></i>BSc in Information Technology</h5>
                         <p>Currently pursuing a degree in Information Technology with a focus on web technologies and
@@ -173,11 +185,11 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-5 text-center">
-                    <div class="card1 p-3 mb-3"><img src="./img/Su.jpg" class="img-fluid rounded shadow">
+                <div class="col-lg-5 text-center" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
+                    <div class="card1 p-3 mb-3"><img src="./img/Su.jpg" class="img-fluid rounded shadow" loading="lazy">
                         <p class="mt-2">Sinai University</p>
                     </div>
-                    <div class="card1 p-3"><img src="./img/nti.jpg" class="img-fluid rounded shadow">
+                    <div class="card1 p-3"><img src="./img/nti.jpg" class="img-fluid rounded shadow" loading="lazy">
                         <p class="mt-2">NTI</p>
                     </div>
                 </div>
@@ -187,25 +199,25 @@
 
 
     <!-- SERVICES -->
-    <section id="services" class="d-flex align-items-center">
+    <section id="services" class="d-flex align-items-center" style="content-visibility:auto; contain-intrinsic-size: 1000px 800px;">
         <div class="container">
-            <h2 class="section-title">Services</h2>
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="800">Services</h2>
             <div class="row g-4">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
                     <div class="card service-card p-4 text-center">
                         <i class="fas fa-code fa-3x mb-3 text-primary"></i>
                         <h5 class="fw-bold mb-3">Web Development</h5>
                         <p>Building responsive, modern websites with HTML, CSS, and JavaScript.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                     <div class="card service-card p-4 text-center">
                         <i class="fas fa-paint-brush fa-3x mb-3 text-primary"></i>
                         <h5 class="fw-bold mb-3">UI Implementation</h5>
                         <p>"Turning Figma/Photoshop designs into pixel-perfect, user-friendly web pages."</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
                     <div class="card service-card p-4 text-center">
                         <i class="fas fa-mobile-alt fa-3x mb-3 text-primary"></i>
                         <h5 class="fw-bold mb-3">Responsive Design</h5>
@@ -217,47 +229,58 @@
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" class="d-flex align-items-center">
+    <section id="projects" class="d-flex align-items-center" style="content-visibility:auto; contain-intrinsic-size: 1000px 800px;">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card project-card h-100">
-                        <img src="./img/home.png" class="card-img-top project-img" alt="Holy Donuts">
-                        <div class="card-body text-center">
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="800">Projects</h2>
+            <div class="row g-4" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+                <!-- Card: Holy Donuts -->
+                <div class="col-md-6">
+                    <div class="project-card card h-100">
+                        <img src="./img/home.png" class="card-img-top" alt="Holy Donuts screenshot" loading="lazy">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Holy Donuts</h5>
-                            <p class="card-text">A responsive e-commerce donuts shop Built using
-                                HTML, CSS, JavaScript, and Bootstrap.
-                            <p>I implemented the Register/Login system and
-                                Admin Dashboard."</p>
-                            </p>
-                            <a href="https://ahmedwaleed001.github.io/NTi-Team4-WEB-DESIGN/" target="_blank"
-                                class="btn btn-primary">View Project</a>
+                            <p class="card-text flex-grow-1 text-muted">E-commerce donuts shop with auth and admin dashboard. Built with HTML, CSS, JS, Bootstrap.</p>
+
+                            <div class="tech-badges mb-3" aria-label="Technologies used">
+                                <span class="tech-badge html">HTML</span>
+                                <span class="tech-badge css">CSS</span>
+                                <span class="tech-badge js">JavaScript</span>
+                                <span class="tech-badge bs">Bootstrap</span>
+                            </div>
+
+                            <div class="project-actions d-flex gap-2 mt-2 justify-content-center flex-wrap">
+                                <a href="https://ahmedwaleed001.github.io/NTi-Team4-WEB-DESIGN/" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" title="Open Live Site">
+                                    <i class="fas fa-external-link-alt me-1"></i> Live
+                                </a>
+                                <a href="https://github.com/ahmedwaleed001/NTi-Team4-WEB-DESIGN.git" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm" data-bs-toggle="tooltip" title="View Source Code">
+                                    <i class="fab fa-github me-1"></i> Code
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card project-card h-100">
-                        <img src="./img/store.png" class="card-img-top project-img" alt="Portfolio Website">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Execlusive</h5>
-                            <p class="card-text">A responsive e-commerce website built with HTML, CSS, and
-                                JavaScript.
-                            <p>featuring product browsing, shopping cart, and smooth user experience across
-                                all devices.</p>
-                            </p>
-                            <a href="https://mohamedbakar196.github.io/Giga-store/" target="_blank"
-                                class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card project-card h-100">
-                        <img src="images/project3.jpg" class="card-img-top project-img" alt="Task Manager">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">p3</h5>
-                            <p class="card-text">Simple task management app with HTML, CSS & JavaScript.</p>
-                            <a href="#" target="_blank" class="btn btn-primary">View Project</a>
+
+                <!-- Card: Giga Store -->
+                <div class="col-md-6">
+                    <div class="project-card card h-100">
+                        <img src="./img/store.png" class="card-img-top" alt="Giga Store screenshot" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Giga Store</h5>
+                            <p class="card-text flex-grow-1 text-muted">Responsive e-commerce experience with cart and smooth UX across devices.</p>
+
+                            <div class="tech-badges mb-3" aria-label="Technologies used">
+                                <span class="tech-badge html">HTML</span>
+                                <span class="tech-badge css">CSS</span>
+                            </div>
+
+                            <div class="project-actions d-flex gap-2 mt-2 justify-content-center flex-wrap">
+                                <a href="https://mohamedbakar196.github.io/Giga-store/" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" title="Open Live Site">
+                                    <i class="fas fa-external-link-alt me-1"></i> Live
+                                </a>
+                                <a href="https://github.com/MohamedBakar196/Giga-store" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm" data-bs-toggle="tooltip" title="View Source Code">
+                                    <i class="fab fa-github me-1"></i> Code
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -266,29 +289,189 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="d-flex align-items-center">
+    <section id="contact" class="d-flex align-items-center" style="content-visibility:auto; contain-intrinsic-size: 1000px 800px;">
         <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <div class="card contact-card p-4">
-                <p>
-                    I’m always open to new opportunities, collaborations, and projects. Feel free to get in touch with
-                    me:
-                </p>
-                <p><i class="fas fa-envelope me-2"></i>Email: <a
-                        href="mailto:m.abdulaziz4473@su.edu.eg">m.abdulaziz4473@su.edu.eg</a></p>
-                <p><i class="fas fa-phone me-2"></i>Phone: +201020764359</p>
-                <p><i class="fab fa-linkedin me-2"></i>LinkedIn: <a href="https://www.linkedin.com/in/mohamed-bakar04"
-                        target="_blank">linkedin.com/in/mohamed-bakar04</a></p>
-                <p><i class="fab fa-github me-2"></i>GitHub: <a href="https://github.com/MohamedBakar196"
-                        target="_blank">github.com/MohamedBakar196</a></p>
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="800">Contact</h2>
+            <div class="contact-modern" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150">
+                <div class="row g-4 align-items-stretch justify-content-center">
+                    <!-- Info Only -->
+                    <div class="col-lg-7 col-xl-6">
+                        <div class="contact-info h-100 p-4 text-center">
+                            <h5 class="mb-3">Let's build something great</h5>
+                            <p class="mb-4">I'm open to freelance projects, internships, and collaborations. Reach out and I'll reply within 24 hours.</p>
+
+                            <div class="contact-info-list">
+                                <div class="info-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <div>
+                                        <small>Email</small>
+                                        <a href="mailto:m.abdulaziz4473@su.edu.eg">m.abdulaziz4473@su.edu.eg</a>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-phone"></i>
+                                    <div>
+                                        <small>Phone</small>
+                                        <a href="tel:+201020764359">+20 102 076 4359</a>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-location-dot"></i>
+                                    <div>
+                                        <small>Location</small>
+                                        <span>Egypt, Sinai University</span>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-user-clock"></i>
+                                    <div>
+                                        <small>Availability</small>
+                                        <span>Part-time / Remote</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-wrap gap-2 mt-3 justify-content-center">
+                                <a href="https://github.com/MohamedBakar196" target="_blank" class="social-link" aria-label="GitHub" data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/mohamed-bakar04" target="_blank" class="social-link" aria-label="LinkedIn" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="mailto:m.abdulaziz4473@su.edu.eg" class="social-link" aria-label="Email" data-bs-toggle="tooltip" data-bs-placement="top" title="Email">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <a href="https://wa.me/201020764359" target="_blank" rel="noopener" class="social-link whatsapp" aria-label="WhatsApp" data-bs-toggle="tooltip" data-bs-placement="top" title="WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer>© 2025 Mohamed Bakar Portfolio. All Rights Reserved.</footer>
+    <footer>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p>© 2025 Mohamed Bakar Portfolio. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="https://github.com/MohamedBakar196" target="_blank" rel="noopener" class="social-link" data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                            <span class="visually-hidden">GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mohamed-bakar04" target="_blank" rel="noopener" class="social-link" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            <span class="visually-hidden">LinkedIn</span>
+                        </a>
+                        <a href="mailto:m.abdulaziz4473@su.edu.eg" class="social-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Email">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <span class="visually-hidden">Email</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Animation Libraries -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script>
+        // Initialize AOS (safer init to avoid invisible content)
+        window.addEventListener('DOMContentLoaded', function () {
+            if (window.AOS) {
+                AOS.init({
+                    duration: 500,
+                    once: true,
+                    offset: 60,
+                    easing: 'ease-out'
+                });
+            }
+
+            // Enable Bootstrap tooltips globally
+            if (window.bootstrap) {
+                const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+                tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl);
+                });
+            }
+        });
+
+        // Theme toggle logic removed: enforce light mode by default
+        document.body.removeAttribute('data-theme');
+        try { localStorage.removeItem('theme'); } catch (e) {}
+
+        // Smooth Scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Removed old project-media hover effect (no longer used)
+
+        // Navbar background change on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+        });
+
+        // Parallax disabled to prevent layout overlap between sections
+
+        // Optimized icon animations
+        const iconElements = document.querySelectorAll('.skill-card i, .service-card i');
+        iconElements.forEach(icon => {
+            icon.style.transition = 'transform 0.3s ease';
+            
+            icon.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.15) rotate(3deg)';
+            });
+            
+            icon.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1) rotate(0deg)';
+            });
+        });
+
+        // Removed old carousel dynamic code (replaced with static project cards)
+
+        // Removed overlay preview logic (overlay not used)
+
+        // Back to top behavior
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+        backToTop.addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+    </script>
+    <!-- Back to top -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top" data-bs-toggle="tooltip" data-bs-placement="left" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 </body>
 
 </html>
