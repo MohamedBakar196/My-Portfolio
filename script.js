@@ -3,9 +3,9 @@
 function initAOS() {
   if (!window.AOS) return;
   AOS.init({
-    duration: 650,
+    duration: 0,
     once: true,
-    offset: 80,
+    offset: 0,
     easing: "ease-out-cubic",
   });
 }
