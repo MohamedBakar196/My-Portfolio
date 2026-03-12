@@ -4,16 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohamed Bakar Portfolio - Modern Blue</title>
+    <title>Mohamed Bakar | Frontend Developer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Animation Libraries -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./img/me.png">
+    <link rel="apple-touch-icon" href="./img/me.png">
+    <!-- Preload hero image -->
+    <link rel="preload" as="image" href="./img/IMG_2131.JPG">
 </head>
 
 <body>
 
+    <!-- Skip to content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Theme toggle -->
+    <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle theme" aria-pressed="false" data-bs-toggle="tooltip" data-bs-placement="left" title="Dark / Light">
+        <i class="fa-solid fa-moon"></i><span>Dark</span>
+    </button>
+
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#home">Mohamed Bakar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -23,57 +42,104 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#github">GitHub</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-<!-- HERO -->
-<section id="home" class="hero">
-  <div class="container hero-grid">
-    
-    <!-- الدائرة مع الصورة -->
-    <div class="hero-circle">
-      <img src="./img/IMG_2131.JPG" alt="Profile Picture">
-    </div>
-    
-    <!-- النص -->
-    <div class="hero-text">
-      <h1>Hello, I'm <span>Mohamed Bakar</span></h1>
-      <p class="lead">Front-End Developer & IT Student</p>
-      <a href="#projects" class="btn btn-primary btn-lg mt-3">View My Work</a>
-    </div>
+    <main id="main-content">
 
-  </div>
-</section>
+    <!-- HERO -->
+    <header id="home" class="hero section">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-text" data-aos="fade-up" data-aos-duration="900">
+                    <p class="hero-eyebrow">Hi, I'm</p>
+                    <h1 class="hero-title">Mohamed Bakar</h1>
+                    <p class="hero-subtitle">Frontend Developer <span class="hero-sep">|</span> React Developer</p>
+                    <p class="hero-desc">I build modern, fast and responsive web applications.</p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
+                        <a href="#contact" class="btn btn-outline-primary btn-lg">Contact Me</a>
+                        <a href="#contact" class="btn btn-ghost btn-lg">Hire Me</a>
+                        <a href="#" class="btn btn-secondary btn-lg" data-placeholder="true" data-bs-toggle="tooltip" data-bs-placement="top" title="Replace with your CV file link">Download CV</a>
+                    </div>
+
+                    <div class="hero-social" aria-label="Social links">
+                        <a href="https://github.com/MohamedBakar196" target="_blank" rel="noopener" class="social-pill" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i><span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mohamed-bakar04" target="_blank" rel="noopener" class="social-pill" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i><span>LinkedIn</span>
+                        </a>
+                        <a href="mailto:m.abdulaziz4473@su.edu.eg" class="social-pill" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i><span>Email</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-media" data-aos="fade-left" data-aos-duration="900" data-aos-delay="100">
+                    <div class="hero-avatar">
+                        <picture>
+                            <source srcset="./img/me.webp" type="image/webp">
+                            <!-- Fallback JPG -->
+                            <img src="./img/me.jpg" alt="Portrait of frontend developer Mohamed Bakar" loading="eager">
+                        </picture>
+                    </div>
+                    <div class="hero-card">
+                        <div class="hero-card-row">
+                            <span class="dot dot-accent"></span>
+                            <span class="hero-card-title">Available for work</span>
+                        </div>
+                        <p class="hero-card-text">Open to freelance projects, internships, and remote opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
 
 
     <!-- ABOUT -->
-    <section id="about" class="d-flex align-items-center">
+    <section id="about" class="section" style="content-visibility:auto; contain-intrinsic-size: 1000px 800px;">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="row align-items-center g-5">
-                <div class="col-lg-5 text-center">
-                    <img src="./img/frontend.jpg" class="img-fluid rounded shadow" alt="About Image">
-                </div>
-                <div class="col-lg-7">
-                    <div class="card p-4 mb-4 about-card">
-                        <p>Hello, I’m Mohamed, an IT student at Sinai University. I have a solid background in Front-End
-                            Development, with experience in HTML, CSS, and JavaScript. I’m passionate about creating
-                            clean, responsive, and user-friendly websites.</p>
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="800">About Me</h2>
+            <div class="row align-items-center g-5 about-layout">
+                <div class="col-lg-5" data-aos="fade-right" data-aos-duration="800" data-aos-delay="150">
+                    <div class="about-photo">
+                        <img src="./img/frontend.jpg" class="img-fluid rounded shadow" alt="Frontend development illustration" loading="lazy">
                     </div>
-                    <div class="card p-4 about-card">
+                </div>
+                <div class="col-lg-7" data-aos="fade-left" data-aos-duration="800" data-aos-delay="250">
+                    <div class="about-main card p-4 mb-4 about-card">
+                        <h3 class="about-heading">Frontend developer with focus on clean, performant UIs.</h3>
+                        <p class="mb-3">
+                            Hello, I'm Mohamed, an IT student at Sinai University. I have a solid background in Front-End
+                            Development, with experience in HTML, CSS, and JavaScript. I'm passionate about creating
+                            clean, responsive, and user-friendly websites.
+                        </p>
+                        <ul class="about-highlights">
+                            <li>Passion for modern web development and continuous learning.</li>
+                            <li>Focus on clean, maintainable code and performance.</li>
+                            <li>Strong interest in modern UI/UX and responsive design.</li>
+                        </ul>
+                        <div class="about-actions mt-3">
+                            <a href="cv.pdf" class="btn btn-secondary cv-download" download="Mohamed-Bakar-CV.pdf">Download CV</a>
+                            <a href="#contact" class="btn btn-outline-primary">Contact Me</a>
+                        </div>
+                    </div>
+                    <div class="about-main card p-4 about-card">
                         <h5 class="mb-3"><i class="fas fa-star me-2"></i>My Qualities</h5>
                         <ul class="list-unstyled mb-0">
-                            <li><i class="fas fa-check-circle text-primary me-2"></i>Passionate</li>
-                            <li><i class="fas fa-check-circle text-primary me-2"></i>Cooperative</li>
-                            <li><i class="fas fa-check-circle text-primary me-2"></i>Teamwork</li>
-                            <li><i class="fas fa-check-circle text-primary me-2"></i>Curious</li>
+                            <li><i class="fas fa-check-circle me-2"></i>Passionate</li>
+                            <li><i class="fas fa-check-circle me-2"></i>Cooperative</li>
+                            <li><i class="fas fa-check-circle me-2"></i>Teamwork</li>
+                            <li><i class="fas fa-check-circle me-2"></i>Curious</li>
                         </ul>
                     </div>
                 </div>
@@ -82,130 +148,91 @@
     </section>
 
     <!-- SKILLS -->
-    <section id="skills" class="d-flex align-items-center">
+    <section id="skills" class="section" style="content-visibility:auto; contain-intrinsic-size: 1000px 800px;">
         <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="row g-4 text-center">
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="800">Skills</h2>
+            <p class="section-lead text-center" data-aos="fade-up" data-aos-duration="700" data-aos-delay="80">
+                A mix of core frontend technologies and soft skills that help me ship user-friendly, maintainable interfaces.
+            </p>
 
-                <div class="col-6 col-md-3">
-                    <div class="card p-4 skill-card text-center">
-                        <i class="fab fa-html5 fa-2x mb-2 text-primary"></i>
-                        <h5>HTML</h5>
+            <div class="row g-4 mt-2">
+                <div class="col-lg-7" data-aos="fade-up" data-aos-duration="700" data-aos-delay="140">
+                    <h3 class="skills-subheading">Core Frontend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-tile">
+                            <i class="fa-brands fa-html5"></i><span>HTML</span>
+                        </div>
+                        <div class="skill-tile">
+                            <i class="fa-brands fa-css3-alt"></i><span>CSS</span>
+                        </div>
+                        <div class="skill-tile">
+                            <i class="fa-brands fa-js"></i><span>JavaScript</span>
+                        </div>
+                        <div class="skill-tile">
+                            <i class="fa-brands fa-bootstrap"></i><span>Bootstrap</span>
+                        </div>
+                        <div class="skill-tile">
+                            <i class="fa-brands fa-react"></i><span>React</span>
+                        </div>
+                        <div class="skill-tile">
+                            <i class="fa-solid fa-plug-circle-bolt"></i><span>API Integration</span>
+                        </div>
+                        <div class="skill-tile">
+                            <i class="fa-brands fa-git-alt"></i><span>Git</span>
+                        </div>
+                        <div class="skill-tile">
+                            <i class="fa-brands fa-github"></i><span>GitHub</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-md-3">
-                    <div class="card p-4 skill-card text-center">
-                        <i class="fab fa-css3-alt fa-2x mb-2 text-primary"></i>
-                        <h5>CSS</h5>
+                <div class="col-lg-5" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+                    <h3 class="skills-subheading">Soft Skills</h3>
+                    <div class="skills-soft-grid">
+                        <div class="skill-soft-pill">
+                            <i class="fas fa-heart"></i><span>Passionate</span>
+                        </div>
+                        <div class="skill-soft-pill">
+                            <i class="fas fa-handshake-angle"></i><span>Cooperative</span>
+                        </div>
+                        <div class="skill-soft-pill">
+                            <i class="fas fa-users"></i><span>Teamwork</span>
+                        </div>
+                        <div class="skill-soft-pill">
+                            <i class="fas fa-lightbulb"></i><span>Creative Thinking</span>
+                        </div>
+                        <div class="skill-soft-pill">
+                            <i class="fas fa-question-circle"></i><span>Curious</span>
+                        </div>
                     </div>
                 </div>
-
-                <div class="col-6 col-md-3">
-                    <div class="card p-4 skill-card text-center">
-                        <i class="fab fa-js-square fa-2x mb-2 text-primary"></i>
-                        <h5>JavaScript</h5>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-3">
-                    <div class="card p-4 skill-card text-center">
-                        <i class="fab fa-bootstrap fa-2x mb-2 text-primary"></i>
-                        <h5>Bootstrap</h5>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-3">
-                    <div class="card p-4 skill-card text-center">
-                        <i class="fab fa-git-alt fa-2x mb-2 text-primary"></i>
-                        <h5>Git/GitHub</h5>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-3">
-                    <div class="card p-4 skill-card text-center">
-                        <i class="fas fa-lightbulb fa-2x mb-2 text-primary"></i>
-                        <h5>Creative Thinking</h5>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-3">
-                    <div class="card p-4 skill-card text-center">
-                        <i class="fas fa-heart fa-2x mb-2 text-primary"></i>
-                        <h5>Passionate</h5>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-3">
-                    <div class="card p-4 skill-card text-center">
-                        <i class="fas fa-users fa-2x mb-2 text-primary"></i>
-                        <h5>Teamwork</h5>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
 
-    <!-- EDUCATION -->
-    <section id="education" class="d-flex align-items-center">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="row g-4 align-items-center">
-                <div class="col-lg-7">
-                    <div class="card p-4 mb-4 education-card">
-                        <h5><i class="fas fa-graduation-cap me-2"></i>BSc in Information Technology</h5>
-                        <p>Currently pursuing a degree in Information Technology with a focus on web technologies and
-                            software development in Sinia University.
-                        </p>
-                    </div>
-                    <div class="card p-4 mb-4 education-card">
-                        <h5><i class="fas fa-laptop-code me-2"></i>Front-End Courses</h5>
-                        <p>Completed structured training covering HTML, CSS, JavaScript, and responsive web design
-                            principles in NTI.
-                        </p>
-                    </div>
-                    <div class="card p-4 education-card">
-                        <h5><i class="fas fa-briefcase me-2"></i>Hands-on Experience</h5>
-                        <p>Gained hands-on experience through online courses and projects in Front-End Development,
-                            strengthening problem-solving and coding skills.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-5 text-center">
-                    <div class="card1 p-3 mb-3"><img src="./img/Su.jpg" class="img-fluid rounded shadow">
-                        <p class="mt-2">Sinai University</p>
-                    </div>
-                    <div class="card1 p-3"><img src="./img/nti.jpg" class="img-fluid rounded shadow">
-                        <p class="mt-2">NTI</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
     <!-- SERVICES -->
-    <section id="services" class="d-flex align-items-center">
+    <section id="services" class="section" style="content-visibility:auto; contain-intrinsic-size: 1000px 800px;">
         <div class="container">
-            <h2 class="section-title">Services</h2>
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="800">Services</h2>
             <div class="row g-4">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
                     <div class="card service-card p-4 text-center">
                         <i class="fas fa-code fa-3x mb-3 text-primary"></i>
                         <h5 class="fw-bold mb-3">Web Development</h5>
                         <p>Building responsive, modern websites with HTML, CSS, and JavaScript.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                     <div class="card service-card p-4 text-center">
                         <i class="fas fa-paint-brush fa-3x mb-3 text-primary"></i>
                         <h5 class="fw-bold mb-3">UI Implementation</h5>
                         <p>"Turning Figma/Photoshop designs into pixel-perfect, user-friendly web pages."</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
                     <div class="card service-card p-4 text-center">
                         <i class="fas fa-mobile-alt fa-3x mb-3 text-primary"></i>
                         <h5 class="fw-bold mb-3">Responsive Design</h5>
@@ -217,78 +244,270 @@
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" class="d-flex align-items-center">
+    <section id="projects" class="section" style="content-visibility:auto; contain-intrinsic-size: 1000px 800px;">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card project-card h-100">
-                        <img src="./img/home.png" class="card-img-top project-img" alt="Holy Donuts">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Holy Donuts</h5>
-                            <p class="card-text">A responsive e-commerce donuts shop Built using
-                                HTML, CSS, JavaScript, and Bootstrap.
-                            <p>I implemented the Register/Login system and
-                                Admin Dashboard."</p>
-                            </p>
-                            <a href="https://ahmedwaleed001.github.io/NTi-Team4-WEB-DESIGN/" target="_blank"
-                                class="btn btn-primary">View Project</a>
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="800">Projects</h2>
+            <p class="section-lead text-center" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50">
+                A selection of projects. Replace the placeholders with your real screenshots, descriptions, and links.
+            </p>
+
+            <div class="row g-4 mt-1" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+                <div class="col-sm-6 col-lg-6 col-xl-3">
+                    <article class="project-card card h-100">
+                        <div class="project-media">
+                            <img src="https://placehold.co/800x520/png?text=Project+Image" class="card-img-top" alt="Project placeholder image" loading="lazy">
                         </div>
-                    </div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="project-title">Project Name</h3>
+                            <div class="tech-badges" aria-label="Technologies used">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">API</span>
+                                <span class="tech-tag">CSS</span>
+                            </div>
+                            <p class="project-desc mt-3 flex-grow-1">Short description about the project. Add what it does and your impact.</p>
+                            <div class="project-actions mt-3">
+                                <a class="btn btn-primary" href="#" data-placeholder="true">Live Demo</a>
+                                <a class="btn btn-outline-primary" href="#" data-placeholder="true">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-                <div class="col-md-4">
-                    <div class="card project-card h-100">
-                        <img src="./img/store.png" class="card-img-top project-img" alt="Portfolio Website">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Execlusive</h5>
-                            <p class="card-text">A responsive e-commerce website built with HTML, CSS, and
-                                JavaScript.
-                            <p>featuring product browsing, shopping cart, and smooth user experience across
-                                all devices.</p>
-                            </p>
-                            <a href="https://mohamedbakar196.github.io/Giga-store/" target="_blank"
-                                class="btn btn-primary">View Project</a>
+
+                <div class="col-sm-6 col-lg-6 col-xl-3">
+                    <article class="project-card card h-100">
+                        <div class="project-media">
+                            <img src="https://placehold.co/800x520/png?text=Project+Image" class="card-img-top" alt="Project placeholder image" loading="lazy">
                         </div>
-                    </div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="project-title">Project Name</h3>
+                            <div class="tech-badges" aria-label="Technologies used">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Bootstrap</span>
+                                <span class="tech-tag">API</span>
+                            </div>
+                            <p class="project-desc mt-3 flex-grow-1">Short description about the project. Add features, performance, and UI details.</p>
+                            <div class="project-actions mt-3">
+                                <a class="btn btn-primary" href="#" data-placeholder="true">Live Demo</a>
+                                <a class="btn btn-outline-primary" href="#" data-placeholder="true">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-                <div class="col-md-4">
-                    <div class="card project-card h-100">
-                        <img src="images/project3.jpg" class="card-img-top project-img" alt="Task Manager">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">p3</h5>
-                            <p class="card-text">Simple task management app with HTML, CSS & JavaScript.</p>
-                            <a href="#" target="_blank" class="btn btn-primary">View Project</a>
+
+                <div class="col-sm-6 col-lg-6 col-xl-3">
+                    <article class="project-card card h-100">
+                        <div class="project-media">
+                            <img src="https://placehold.co/800x520/png?text=Project+Image" class="card-img-top" alt="Project placeholder image" loading="lazy">
                         </div>
-                    </div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="project-title">Project Name</h3>
+                            <div class="tech-badges" aria-label="Technologies used">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                            </div>
+                            <p class="project-desc mt-3 flex-grow-1">Short description about the project. Mention problem/solution and key UI pieces.</p>
+                            <div class="project-actions mt-3">
+                                <a class="btn btn-primary" href="#" data-placeholder="true">Live Demo</a>
+                                <a class="btn btn-outline-primary" href="#" data-placeholder="true">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-6 col-lg-6 col-xl-3">
+                    <article class="project-card card h-100">
+                        <div class="project-media">
+                            <img src="https://placehold.co/800x520/png?text=Project+Image" class="card-img-top" alt="Project placeholder image" loading="lazy">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="project-title">Project Name</h3>
+                            <div class="tech-badges" aria-label="Technologies used">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">CSS</span>
+                            </div>
+                            <p class="project-desc mt-3 flex-grow-1">Short description about the project. Add scalability, reuse, and architecture notes.</p>
+                            <div class="project-actions mt-3">
+                                <a class="btn btn-primary" href="#" data-placeholder="true">Live Demo</a>
+                                <a class="btn btn-outline-primary" href="#" data-placeholder="true">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GITHUB STATS -->
+    <section id="github" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="800">GitHub Stats</h2>
+            <p class="section-lead text-center" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50">
+                Live widgets powered by GitHub profile stats.
+            </p>
+
+            <div class="github-grid" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+                <div class="github-card">
+                    <h3>Contributions</h3>
+                    <img
+                        src="https://github-readme-streak-stats.herokuapp.com/?user=MohamedBakar196&theme=transparent&hide_border=true"
+                        alt="GitHub contribution streak stats for MohamedBakar196"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="github-card">
+                    <h3>Stats</h3>
+                    <img
+                        src="https://github-readme-stats.vercel.app/api?username=MohamedBakar196&show_icons=true&theme=transparent&hide_border=true"
+                        alt="GitHub stats for MohamedBakar196"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="github-card">
+                    <h3>Top Languages</h3>
+                    <img
+                        src="https://github-readme-stats.vercel.app/api/top-langs/?username=MohamedBakar196&layout=compact&theme=transparent&hide_border=true"
+                        alt="Top languages for MohamedBakar196"
+                        loading="lazy"
+                    >
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="d-flex align-items-center">
+    <section id="contact" class="section" style="content-visibility:auto; contain-intrinsic-size: 1000px 800px;">
         <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <div class="card contact-card p-4">
-                <p>
-                    I’m always open to new opportunities, collaborations, and projects. Feel free to get in touch with
-                    me:
-                </p>
-                <p><i class="fas fa-envelope me-2"></i>Email: <a
-                        href="mailto:m.abdulaziz4473@su.edu.eg">m.abdulaziz4473@su.edu.eg</a></p>
-                <p><i class="fas fa-phone me-2"></i>Phone: +201020764359</p>
-                <p><i class="fab fa-linkedin me-2"></i>LinkedIn: <a href="https://www.linkedin.com/in/mohamed-bakar04"
-                        target="_blank">linkedin.com/in/mohamed-bakar04</a></p>
-                <p><i class="fab fa-github me-2"></i>GitHub: <a href="https://github.com/MohamedBakar196"
-                        target="_blank">github.com/MohamedBakar196</a></p>
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="800">Contact</h2>
+            <div class="contact-modern" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150">
+                <div class="row g-4 align-items-stretch justify-content-center">
+                    <!-- Info Only -->
+                    <div class="col-lg-7 col-xl-6">
+                        <div class="contact-info h-100 p-4 text-center">
+                            <h5 class="mb-3">Let's build something great</h5>
+                            <p class="mb-4">I'm open to freelance projects, internships, and collaborations. Reach out and I'll reply within 24 hours.</p>
+
+                            <div class="cta-row mb-4">
+                                <a href="#contact" class="btn btn-primary">Contact Me</a>
+                                <a href="#contact" class="btn btn-ghost">Hire Me</a>
+                                <a href="cv.pdf" class="btn btn-secondary cv-download" download="Mohamed-Bakar-CV.pdf">Download CV</a>
+                            </div>
+
+                            <div class="contact-info-list">
+                                <div class="info-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <div>
+                                        <small>Email</small>
+                                        <a href="mailto:m.abdulaziz4473@su.edu.eg">m.abdulaziz4473@su.edu.eg</a>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-phone"></i>
+                                    <div>
+                                        <small>Phone</small>
+                                        <a href="tel:+201020764359">+20 102 076 4359</a>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-location-dot"></i>
+                                    <div>
+                                        <small>Location</small>
+                                        <span>Egypt, Sinai University</span>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-user-clock"></i>
+                                    <div>
+                                        <small>Availability</small>
+                                        <span>Part-time / Remote</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-wrap gap-2 mt-3 justify-content-center">
+                                <a href="https://github.com/MohamedBakar196" target="_blank" class="social-link" aria-label="GitHub" data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/mohamed-bakar04" target="_blank" class="social-link" aria-label="LinkedIn" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="mailto:m.abdulaziz4473@su.edu.eg" class="social-link" aria-label="Email" data-bs-toggle="tooltip" data-bs-placement="top" title="Email">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <a href="https://wa.me/201020764359" target="_blank" rel="noopener" class="social-link whatsapp" aria-label="WhatsApp" data-bs-toggle="tooltip" data-bs-placement="top" title="WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Contact form -->
+                    <div class="col-lg-5 col-xl-5">
+                        <div class="contact-form-wrapper h-100 p-4">
+                            <form id="contactForm" novalidate>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" id="name" name="name" class="form-control" required minlength="2" aria-required="true">
+                                    <div class="invalid-feedback">Please enter your name (at least 2 characters).</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" id="email" name="email" class="form-control" required aria-required="true">
+                                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea id="message" name="message" class="form-control" rows="4" required minlength="10" aria-required="true"></textarea>
+                                    <div class="invalid-feedback">Please write a message (at least 10 characters).</div>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                                <p id="contactStatus" class="form-status mt-2" role="status" aria-live="polite"></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer>© 2025 Mohamed Bakar Portfolio. All Rights Reserved.</footer>
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p>© 2026 Mohamed Bakar Portfolio. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="https://github.com/MohamedBakar196" target="_blank" rel="noopener" class="social-link" data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                            <span class="visually-hidden">GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mohamed-bakar04" target="_blank" rel="noopener" class="social-link" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            <span class="visually-hidden">LinkedIn</span>
+                        </a>
+                        <a href="mailto:m.abdulaziz4473@su.edu.eg" class="social-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Email">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <span class="visually-hidden">Email</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <!-- Animation Libraries -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="script.js" defer></script>
+    <!-- Back to top -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top" data-bs-toggle="tooltip" data-bs-placement="left" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    </main>
 </body>
 
 </html>
