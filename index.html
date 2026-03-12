@@ -24,9 +24,6 @@
 
 <body>
 
-    <!-- Skip to content for accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
     <!-- Theme toggle -->
     <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle theme" aria-pressed="false"
         data-bs-toggle="tooltip" data-bs-placement="left" title="Dark / Light">
@@ -53,13 +50,14 @@
         </div>
     </nav>
 
+
     <main id="main-content">
 
         <!-- HERO -->
         <header id="home" class="hero section">
             <div class="container">
                 <div class="hero-grid">
-                    <div class="hero-text" data-aos="fade-up" data-aos-duration="900">
+                    <div class="hero-text">
                         <p class="hero-eyebrow">Hi, I'm</p>
                         <h1 class="hero-title">Mohamed Bakar</h1>
                         <p class="hero-subtitle">Frontend Developer <span class="hero-sep">|</span> React Developer</p>
@@ -68,10 +66,6 @@
                         <div class="hero-actions">
                             <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
                             <a href="#contact" class="btn btn-outline-primary btn-lg">Contact Me</a>
-                            <a href="#contact" class="btn btn-ghost btn-lg">Hire Me</a>
-                            <a href="#" class="btn btn-secondary btn-lg" data-placeholder="true"
-                                data-bs-toggle="tooltip" data-bs-placement="top"
-                                title="Replace with your CV file link">Download CV</a>
                         </div>
 
                         <div class="hero-social" aria-label="Social links">
@@ -89,11 +83,10 @@
                         </div>
                     </div>
 
-                    <div class="hero-media" data-aos="fade-left" data-aos-duration="900" data-aos-delay="100">
+                    <div class="hero-media">
                         <div class="hero-avatar">
                             <picture>
                                 <source srcset="./img/me.webp" type="image/webp">
-                                <!-- Fallback JPG -->
                                 <img src="./img/me.jpg" alt="Portrait of frontend developer Mohamed Bakar"
                                     loading="eager">
                             </picture>
@@ -116,15 +109,15 @@
         <!-- ABOUT -->
         <section id="about" class="section" style="content-visibility:auto; contain-intrinsic-size: 1000px 800px;">
             <div class="container">
-                <h2 class="section-title" data-aos="fade-up" data-aos-duration="800">About Me</h2>
+                <h2 class="section-title">About Me</h2>
                 <div class="row align-items-center g-5 about-layout">
-                    <div class="col-lg-5" data-aos="fade-right" data-aos-duration="800" data-aos-delay="150">
+                    <div class="col-lg-5">
                         <div class="about-photo">
                             <img src="./img/frontend.jpg" class="img-fluid rounded shadow"
                                 alt="Frontend development illustration" loading="lazy">
                         </div>
                     </div>
-                    <div class="col-lg-7" data-aos="fade-left" data-aos-duration="800" data-aos-delay="250">
+                    <div class="col-lg-7">
                         <div class="about-main card p-4 mb-4 about-card">
                             <h3 class="about-heading">Frontend developer with focus on clean, performant UIs.</h3>
                             <p class="mb-3">
@@ -161,83 +154,59 @@
         <!-- SKILLS -->
         <section id="skills" class="section" style="content-visibility:auto; contain-intrinsic-size: 1000px 800px;">
             <div class="container">
-                <h2 class="section-title" data-aos="fade-up" data-aos-duration="800">Skills</h2>
-                <p class="section-lead text-center" data-aos="fade-up" data-aos-duration="700" data-aos-delay="80">
+                <h2 class="section-title">Skills</h2>
+                <p class="section-lead text-center">
                     A mix of core frontend technologies and soft skills that help me ship user-friendly, maintainable
                     interfaces.
                 </p>
 
                 <div class="row g-4 mt-2">
-                    <div class="col-lg-7" data-aos="fade-up" data-aos-duration="700" data-aos-delay="140">
+                    <div class="col-lg-7">
                         <h3 class="skills-subheading">Core Frontend</h3>
                         <div class="skills-grid">
-                            <div class="skill-badge">
-                                <div class="skill-icon-wrapper">
-                                    <i class="fa-brands fa-html5"></i>
-                                </div>
-                                <span class="skill-label">HTML5</span>
+                            <div class="skill-tile">
+                                <i class="fa-brands fa-html5"></i><span>HTML</span>
                             </div>
-                            <div class="skill-badge">
-                                <div class="skill-icon-wrapper">
-                                    <i class="fa-brands fa-css3-alt"></i>
-                                </div>
-                                <span class="skill-label">CSS3</span>
+                            <div class="skill-tile">
+                                <i class="fa-brands fa-css3-alt"></i><span>CSS</span>
                             </div>
-                            <div class="skill-badge">
-                                <div class="skill-icon-wrapper">
-                                    <i class="fa-brands fa-js"></i>
-                                </div>
-                                <span class="skill-label">JavaScript</span>
+                            <div class="skill-tile">
+                                <i class="fa-brands fa-js"></i><span>JavaScript</span>
                             </div>
-                            <div class="skill-badge">
-                                <div class="skill-icon-wrapper">
-                                    <i class="fa-brands fa-bootstrap"></i>
-                                </div>
-                                <span class="skill-label">Bootstrap</span>
+                            <div class="skill-tile">
+                                <i class="fa-brands fa-bootstrap"></i><span>Bootstrap</span>
                             </div>
-                            <div class="skill-badge">
-                                <div class="skill-icon-wrapper">
-                                    <i class="fa-brands fa-react"></i>
-                                </div>
-                                <span class="skill-label">React</span>
+                            <div class="skill-tile">
+                                <i class="fa-brands fa-react"></i><span>React</span>
                             </div>
-                            <div class="skill-badge">
-                                <div class="skill-icon-wrapper">
-                                    <i class="fa-solid fa-plug-circle-bolt"></i>
-                                </div>
-                                <span class="skill-label">API Integration</span>
+                            <div class="skill-tile">
+                                <i class="fa-solid fa-plug-circle-bolt"></i><span>API Integration</span>
                             </div>
-                            <div class="skill-badge">
-                                <div class="skill-icon-wrapper">
-                                    <i class="fa-brands fa-git-alt"></i>
-                                </div>
-                                <span class="skill-label">Git</span>
+                            <div class="skill-tile">
+                                <i class="fa-brands fa-git-alt"></i><span>Git</span>
                             </div>
-                            <div class="skill-badge">
-                                <div class="skill-icon-wrapper">
-                                    <i class="fa-brands fa-github"></i>
-                                </div>
-                                <span class="skill-label">GitHub</span>
+                            <div class="skill-tile">
+                                <i class="fa-brands fa-github"></i><span>GitHub</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-5" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+                    <div class="col-lg-5">
                         <h3 class="skills-subheading">Soft Skills</h3>
                         <div class="skills-soft-grid">
-                            <div class="skill-soft-badge">
+                            <div class="skill-soft-pill">
                                 <i class="fas fa-heart"></i><span>Passionate</span>
                             </div>
-                            <div class="skill-soft-badge">
+                            <div class="skill-soft-pill">
                                 <i class="fas fa-handshake-angle"></i><span>Cooperative</span>
                             </div>
-                            <div class="skill-soft-badge">
+                            <div class="skill-soft-pill">
                                 <i class="fas fa-users"></i><span>Teamwork</span>
                             </div>
-                            <div class="skill-soft-badge">
+                            <div class="skill-soft-pill">
                                 <i class="fas fa-lightbulb"></i><span>Creative Thinking</span>
                             </div>
-                            <div class="skill-soft-badge">
+                            <div class="skill-soft-pill">
                                 <i class="fas fa-question-circle"></i><span>Curious</span>
                             </div>
                         </div>
@@ -252,39 +221,28 @@
         <!-- SERVICES -->
         <section id="services" class="section" style="content-visibility:auto; contain-intrinsic-size: 1000px 800px;">
             <div class="container">
-                <h2 class="section-title" data-aos="fade-up" data-aos-duration="800">Services</h2>
+                <h2 class="section-title">Services</h2>
                 <div class="row g-4">
-                    <div class="col-md-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
-                        <div class="service-card-modern">
-                            <div class="service-icon-box">
-                                <i class="fas fa-code"></i>
-                            </div>
-                            <h5 class="service-title">Web Development</h5>
-                            <p class="service-description">Building responsive, modern websites with HTML, CSS, and
-                                JavaScript.</p>
-                            <div class="service-accent"></div>
+                    <div class="col-md-4">
+                        <div class="card service-card p-4 text-center">
+                            <i class="fas fa-code fa-3x mb-3 text-primary"></i>
+                            <h5 class="fw-bold mb-3">Web Development</h5>
+                            <p>Building responsive, modern websites with HTML, CSS, and JavaScript.</p>
                         </div>
                     </div>
-                    <div class="col-md-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
-                        <div class="service-card-modern">
-                            <div class="service-icon-box">
-                                <i class="fas fa-paint-brush"></i>
-                            </div>
-                            <h5 class="service-title">UI Implementation</h5>
-                            <p class="service-description">Turning Figma/Photoshop designs into pixel-perfect,
-                                user-friendly web pages.</p>
-                            <div class="service-accent"></div>
+                    <div class="col-md-4">
+                        <div class="card service-card p-4 text-center">
+                            <i class="fas fa-paint-brush fa-3x mb-3 text-primary"></i>
+                            <h5 class="fw-bold mb-3">UI Implementation</h5>
+                            <p>"Turning Figma/Photoshop designs into pixel-perfect, user-friendly web pages."</p>
                         </div>
                     </div>
-                    <div class="col-md-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
-                        <div class="service-card-modern">
-                            <div class="service-icon-box">
-                                <i class="fas fa-mobile-alt"></i>
-                            </div>
-                            <h5 class="service-title">Responsive Design</h5>
-                            <p class="service-description">Creating mobile-friendly websites using responsive design and
-                                frameworks like Bootstrap.</p>
-                            <div class="service-accent"></div>
+                    <div class="col-md-4">
+                        <div class="card service-card p-4 text-center">
+                            <i class="fas fa-mobile-alt fa-3x mb-3 text-primary"></i>
+                            <h5 class="fw-bold mb-3">Responsive Design</h5>
+                            <p>Creating mobile-friendly websites using responsive design and frameworks like Bootstrap.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -294,13 +252,13 @@
         <!-- PROJECTS -->
         <section id="projects" class="section" style="content-visibility:auto; contain-intrinsic-size: 1000px 800px;">
             <div class="container">
-                <h2 class="section-title" data-aos="fade-up" data-aos-duration="800">Projects</h2>
-                <p class="section-lead text-center" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-lead text-center">
                     A selection of projects. Replace the placeholders with your real screenshots, descriptions, and
                     links.
                 </p>
 
-                <div class="row g-4 mt-1" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+                <div class="row g-4 mt-1">
                     <div class="col-sm-6 col-lg-6 col-xl-3">
                         <article class="project-card card h-100">
                             <div class="project-media">
@@ -400,12 +358,12 @@
         <!-- GITHUB STATS -->
         <section id="github" class="section">
             <div class="container">
-                <h2 class="section-title" data-aos="fade-up" data-aos-duration="800">GitHub Stats</h2>
-                <p class="section-lead text-center" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50">
+                <h2 class="section-title">GitHub Stats</h2>
+                <p class="section-lead text-center">
                     Live widgets powered by GitHub profile stats.
                 </p>
 
-                <div class="github-grid" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+                <div class="github-grid">
                     <div class="github-card">
                         <h3>Contributions</h3>
                         <img src="https://github-readme-streak-stats.herokuapp.com/?user=MohamedBakar196&theme=transparent&hide_border=true"
@@ -428,8 +386,8 @@
         <!-- CONTACT -->
         <section id="contact" class="section" style="content-visibility:auto; contain-intrinsic-size: 1000px 800px;">
             <div class="container">
-                <h2 class="section-title" data-aos="fade-up" data-aos-duration="800">Contact</h2>
-                <div class="contact-modern" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-modern">
                     <div class="row g-4 align-items-stretch justify-content-center">
                         <!-- Info Only -->
                         <div class="col-lg-7 col-xl-6">
