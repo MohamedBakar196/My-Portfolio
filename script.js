@@ -105,13 +105,6 @@ function initBackToTop() {
   });
 }
 
-function preventPlaceholderLinks() {
-  document.querySelectorAll('a[data-placeholder="true"]').forEach((a) => {
-    a.addEventListener("click", (e) => {
-      e.preventDefault();
-    });
-  });
-}
 
 // Simple contact form validation + Formspree/EmailJS hook
 function initContactForm() {
@@ -194,19 +187,6 @@ function initContactForm() {
   });
 }
 
-// Simple tracking for CV downloads (console only)
-function initCvTracking() {
-  const cvLinks = document.querySelectorAll(".cv-download");
-  if (!cvLinks.length) return;
-
-  cvLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-      // Replace with real analytics/event tracking if needed
-      // eslint-disable-next-line no-console
-      console.log("CV downloaded");
-    });
-  });
-}
 
 window.addEventListener("DOMContentLoaded", () => {
   initAOS();
@@ -215,8 +195,6 @@ window.addEventListener("DOMContentLoaded", () => {
   initSmoothScroll();
   initNavbarScrolled();
   initBackToTop();
-  preventPlaceholderLinks();
   initContactForm();
-  initCvTracking();
 });
 
